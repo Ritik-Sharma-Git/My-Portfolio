@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { FadeIn } from "./FadeIn";
-import { Mail, Linkedin, Github, Phone, Send, CheckCircle2, XCircle } from "lucide-react";
+import { Mail, Linkedin, Github, Phone, Send, CheckCircle2, XCircle, Instagram } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
 export function Contact() {
@@ -116,12 +116,25 @@ export function Contact() {
                 </div>
               </div>
 
+              <a href="https://www.instagram.com/ritik.29_?igsh=MTF6YXdvODVlZjEycA==" target="_blank" className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/5 hover:border-pink-500/50 transition-all group pointer-events-auto">
+                <div className="p-3 bg-pink-500/10 rounded-lg text-pink-500 group-hover:scale-110 transition-transform">
+                  <Instagram size={20} />
+                </div>
+                <div>
+                  <div className="text-sm text-foreground/50 font-mono">Instagram</div>
+                  <div className="text-foreground font-medium">@ritik.29_</div>
+                </div>
+              </a>
+
               <div className="flex gap-4 pt-4">
                 <a href="https://www.linkedin.com/in/ritik-sharma-aa0282224" target="_blank" className="p-4 rounded-xl bg-white/5 border border-white/5 hover:border-accent hover:text-accent transition-all group">
                   <Linkedin size={24} className="group-hover:-translate-y-1 transition-transform" />
                 </a>
                 <a href="https://github.com/Ritik-Sharma-Git" target="_blank" className="p-4 rounded-xl bg-white/5 border border-white/5 hover:border-white hover:text-white transition-all group">
                   <Github size={24} className="group-hover:-translate-y-1 transition-transform" />
+                </a>
+                <a href="https://www.instagram.com/ritik.29_?igsh=MTF6YXdvODVlZjEycA==" target="_blank" className="p-4 rounded-xl bg-white/5 border border-white/5 hover:border-pink-500 hover:text-pink-500 transition-all group">
+                  <Instagram size={24} className="group-hover:-translate-y-1 transition-transform" />
                 </a>
               </div>
             </div>
